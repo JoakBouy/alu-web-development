@@ -1,4 +1,4 @@
-body {
+body.works_on_smartphone {
     display: flex;
     flex-direction: column;
 }
@@ -25,4 +25,19 @@ header {
 
 footer {
     flex: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Add styles here for screens smaller than 600px */
+    body.works_on_smartphone {
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    article, aside {
+        flex: 1;
+    }
 }
